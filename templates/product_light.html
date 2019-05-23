@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact V4</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/icons/favicon.ico')}}"/>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css"
+          href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css')}}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css"
+          href="{{ url_for('static', filename='fonts/font-awesome-4.7.0/css/font-awesome.min.css')}}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/animate/animate.css')}}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css"
+          href="{{ url_for('static', filename='vendor/css-hamburgers/hamburgers.min.css')}}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css"
+          href="{{ url_for('static', filename='vendor/animsition/css/animsition.min.css')}}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/select2/select2.min.css')}}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css"
+          href="{{ url_for('static', filename='vendor/daterangepicker/daterangepicker.css')}}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/util.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css')}}">
+    <!--===============================================================================================-->
+
+
+    <style>
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  background: #2874f0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 50%;
+  border: 3px solid #2874f0;
+  border-right: none;
+  padding: 5px;
+  height: 36px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #2874f0;
+}
+
+.searchTerm:focus{
+  color: #2874f0;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #2874f0;
+  background: #2874f0;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+    </style>
+</head>
+<body>
+<div class="container-contact100">
+
+    <div class="wrap-contact100">
+       <form class="example" action="/search_fk" method="post">
+           <div align="center">
+               <input type="text" class="searchTerm" style="color: #2874f0" name="search" placeholder="Search..">
+            <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+     </button>
+           </div>
+
+        </form>
+            <table class="table table-striped">
+
+                <thead>
+                <tr>
+
+                    <th>Trending...</th>
+
+                </tr>
+                </thead>
+                <tbody>
+                {% for item in result.json %}
+                    <tr>
+                        <td>{{item.store_id}}</td>
+                        {% for key, value in item.fsns_src.items() %}
+                        <td><a href={{value[1]}} target="_blank">
+                            <img src={{value[0]}} style="width:20px; height:25px;" title={{key}}>
+                        </a>
+                              </td>
+                        {% endfor %}
+                        {% endfor %}
+                    </tr>
+                </tbody>
+            </table>
+
+    </div>
+
+
+</div>
+
+
+
+</body>
+</html>

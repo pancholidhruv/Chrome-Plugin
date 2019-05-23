@@ -1,0 +1,677 @@
+<html class="a-ws a-js a-audio a-video a-canvas a-svg a-drag-drop a-geolocation a-history a-webworker a-autofocus a-input-placeholder a-textarea-placeholder a-local-storage a-gradients a-hires a-transform3d a-touch-scrolling a-text-shadow a-text-stroke a-box-shadow a-border-radius a-border-image a-opacity a-transform a-transition a-ember gr__match_amazonbrowserapp_in" data-19ax5a9jf="dingo" data-aui-build-date="3.19.2-2019-04-03">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript">
+            window.AA = window.AA || {};
+            window.AA.strings = window.AA.strings || {};
+            /* intro browser related strings */
+            window.AA.strings["bit-aa-gateway-new-ftue-chrome"] = "";
+            window.AA.strings["bit-aa-gateway-new-ftue-firefox"] = "";
+            window.AA.strings["bit-aa-gateway-new-ftue-opera"] = "";
+            window.AA.strings["bit-aa-gateway-new-ftue-sleipnir"] = "";
+            window.AA.strings["bit-aa-gateway-new-ftue-sogou"] = "";
+            window.AA.strings["bit-aa-gateway-new-ftue-360"] = "";
+            window.AA.strings["bit-aa-gateway-new-ftue-safari"] = "true";
+            window.AA.strings["bit-aa-gateway-new-ftue-edge"] = "false";
+            window.AA.strings["bit-aa-gateway-new-ftue-internetexplorer"] = "true";
+        </script>
+        <script type="text/javascript">
+            // helps us not to show stripe if details are empty
+            window.noSCompProductDetails = false;
+            window.onImageLoadError = function(element) {
+                do {
+                    //In case of invalid image, we hide the whole product the parent div has classname product.
+                    if (element.className.toLowerCase() === 'product') {
+                        element.remove();
+                        //TODO: capture metric
+                        break;
+                    }
+                } while (element = element.parentNode);
+            };
+        </script>
+        <style type="text/css">
+            .amazon-logo {
+            background: url("https://img1a.flixcart.com/www/linchpin/batman-returns/images/logo_lite-cbb3574d.png") no-repeat center center;
+            }
+            .amazon-logo, .intro-container-smile .amazon-logo-smile {
+            background-repeat: no-repeat;
+            }
+        </style>
+        <script>var aPageStart = (new Date()).getTime();</script>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style1.css')}}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css')}}">
+        <script>
+            (function(g,h,Q,y){function G(a){v&&v.tag&&v.tag(q(":","aui",a))}function z(a,b){v&&v.count&&v.count("aui:"+a,0===b?0:b||(v.count("aui:"+a)||0)+1)}function m(a){try{return a.test(navigator.userAgent)}catch(b){return!1}}function w(a,b,c){a.addEventListener?a.addEventListener(b,c,!1):a.attachEvent&&a.attachEvent("on"+b,c)}function q(a,b,c,d){b=b&&c?b+a+c:b||c;return d?q(a,b,d):b}function H(a,b,c){try{Object.defineProperty(a,b,{value:c,writable:!1})}catch(d){a[b]=c}return c}function R(){return setTimeout(ba,
+            0)}function ua(a,b){var c=a.length,d=c,f=function(){d--||(S.push(b),T||(R(),T=!0))};for(f();c--;)ca[a[c]]?f():(B[a[c]]=B[a[c]]||[]).push(f)}function va(a,b,c,d,f){var e=h.createElement(a?"script":"link");w(e,"error",d);f&&w(e,"load",f);if(a){e.type="text/javascript";e.async=!0;if(a=c)a=-1!==b.indexOf("images/I")||/AUIClients/.test(b);a&&e.setAttribute("crossorigin","anonymous");e.src=b}else e.rel="stylesheet",e.href=b;h.getElementsByTagName("head")[0].appendChild(e)}function da(a,b){function c(c,
+            d){function f(){va(b,c,h,function(b){!I&&h?(h=!1,z("resource_retry"),f()):(z("resource_error"),a.log("Asset failed to load: "+c,I?"WARN":y));b&&b.stopPropagation?b.stopPropagation():g.event&&(g.event.cancelBubble=!0)},d)}if(ea[c])return!1;ea[c]=!0;z("resource_count");var h=!0;return!f()}if(b){var d=0,f=0;c.andConfirm=function(a,b){return c(a,function(){d++;b&&b.apply(this,arguments)})};c.confirm=function(){f++};c.getCsriCounters=function(){return{reqs:d,full:f}}}return c}function wa(a,b,c){for(var d=
+            {name:a,guard:function(c){return b.guardFatal(a,c)},logError:function(c,d,f){b.logError(c,d,f,a)}},f=[],e=0;e<c.length;e++)J.hasOwnProperty(c[e])&&(f[e]=U.hasOwnProperty(c[e])?U[c[e]](J[c[e]],d):J[c[e]]);return f}function C(a,b,c,d,f){return function(e,h){function m(){var a=null;d?a=h:"function"===typeof h&&(p.start=D(),a=h.apply(g,wa(e,k,l)),p.end=D());if(b){J[e]=a;a=e;for(ca[a]=!0;(B[a]||[]).length;)B[a].shift()();delete B[a]}p.done=!0}var k=f||this;"function"===typeof e&&(h=e,e=y);b&&(e=e?e.replace(fa,
+            ""):"__NONAME__",V.hasOwnProperty(e)&&k.error(q(", reregistered by ",q(" by ",e+" already registered",V[e]),k.attribution),e),V[e]=k.attribution);for(var l=[],n=0;n<a.length;n++)l[n]=a[n].replace(fa,"");var p=ga[e||"anon"+ ++xa]={depend:l,registered:D(),namespace:k.namespace};c?m():ua(l,k.guardFatal(e,m));return{decorate:function(a){U[e]=k.guardFatal(e,a)}}}}function ha(a){return function(){var b=Array.prototype.slice.call(arguments);return{execute:C(b,!1,a,!1,this),register:C(b,!0,a,!1,this)}}}function W(a,
+            b){return function(c,d){d||(d=c,c=y);var f=this.attribution;return function(){A.push(b||{attribution:f,name:c,logLevel:a});var e=d.apply(this,arguments);A.pop();return e}}}function K(a,b){this.load={js:da(this,!0),css:da(this)};H(this,"namespace",b);H(this,"attribution",a)}function ia(){h.body?p.trigger("a-bodyBegin"):setTimeout(ia,20)}function E(a,b){if(b){for(var c=a.className.split(" "),d=c.length;d--;)if(c[d]===b)return;a.className+=" "+b}}function ja(a,b){for(var c=a.className.split(" "),d=[],
+            f;(f=c.pop())!==y;)f&&f!==b&&d.push(f);a.className=d.join(" ")}function ka(a){try{return a()}catch(b){return!1}}function L(){if(M){var a=g.innerWidth?{w:g.innerWidth,h:g.innerHeight}:{w:l.clientWidth,h:l.clientHeight};5<Math.abs(a.w-X.w)||50<a.h-X.h?(X=a,N=4,(a=k.mobile||k.tablet?450<a.w&&a.w>a.h:1250<=a.w)?E(l,"a-ws"):ja(l,"a-ws")):0<N&&(N--,la=setTimeout(L,16))}}function ya(a){(M=a===y?!M:!!a)&&L()}function za(){return M}function r(a,b){return"sw:"+(b||"")+":"+a+":"}function ma(){na.forEach(function(a){G(a)})}
+            function n(a){na.push(a)}function oa(a,b,c,d){if(c){b=m(/Chrome/i)&&!m(/Edge/i)&&!m(/OPR/i)&&!a.capabilities.isAmazonApp&&!m(new RegExp(Y+"bwv"+Y+"b"));var f=r(d,"browser"),e=r(d,"prod_mshop"),g=r(d,"beta_mshop");!a.capabilities.isAmazonApp&&c.browser&&b&&(n(f+"supported"),c.browser.action(f,d));!b&&c.browser&&n(f+"unsupported");c.prodMshop&&n(e+"unsupported");c.betaMshop&&n(g+"unsupported")}}"use strict";var O=Q.now=Q.now||function(){return+new Q},D=function(a){return a&&a.now?a.now.bind(a):O}(g.performance),
+            Aa=D(),t=g.AmazonUIPageJS||g.P;if(t&&t.when&&t.register)throw Error("A copy of P has already been loaded on this page.");var v=g.ue;G();G("aui_build_date:3.19.2-2019-04-03");var S=[],T=!1,ba;ba=function(){for(var a=R(),b=O();S.length;)if(S.shift()(),50<O()-b)return;clearTimeout(a);T=!1};m(/OS 6_[0-9]+ like Mac OS X/i)&&w(g,"scroll",R);var ca={},B={},ea={},I=!1;w(g,"beforeunload",function(){I=!0;setTimeout(function(){I=!1},1E4)});var fa=/^prv:/,V={},J={},U={},ga={},xa=0,Y=String.fromCharCode(92),F,
+            A=[],pa=g.onerror;g.onerror=function(a,b,c,d,f){f&&"object"===typeof f||(f=Error(a,b,c),f.columnNumber=d,f.stack=b||c||d?q(Y,f.message,"at "+q(":",b,c,d)):y);var e=A.pop()||{};f.attribution=q(":",f.attribution||e.attribution,e.name);f.logLevel=e.logLevel;f.attribution&&console&&console.log&&console.log([f.logLevel||"ERROR",a,"thrown by",f.attribution].join(" "));A=[];pa&&(e=[].slice.call(arguments),e[4]=f,pa.apply(g,e))};K.prototype={logError:function(a,b,c,d){b={message:b,logLevel:c||"ERROR",attribution:q(":",
+            this.attribution,d)};if(g.ueLogError)return g.ueLogError(a||b,a?b:null),!0;console&&console.error&&(console.log(b),console.error(a));return!1},error:function(a,b,c,d){a=Error(q(":",d,a,c));a.attribution=q(":",this.attribution,b);throw a;},guardError:W(),guardFatal:W("FATAL"),guardCurrent:function(a){var b=A[A.length-1];return b?W(b.logLevel,b).call(this,a):a},log:function(a,b,c){return this.logError(null,a,b,c)},declare:C([],!0,!0,!0),register:C([],!0),execute:C([]),AUI_BUILD_DATE:"3.19.2-2019-04-03",
+            when:ha(),now:ha(!0),trigger:function(a,b,c){var d=O();this.declare(a,{data:b,pageElapsedTime:d-(g.aPageStart||NaN),triggerTime:d});c&&c.instrument&&F.when("prv:a-logTrigger").execute(function(b){b(a)})},handleTriggers:function(){this.log("handleTriggers deprecated")},attributeErrors:function(a){return new K(a)},_namespace:function(a,b){return new K(a,b)}};var p=H(g,"AmazonUIPageJS",new K);F=p._namespace("PageJS","AmazonUI");F.declare("prv:p-debug",ga);p.declare("p-recorder-events",[]);p.declare("p-recorder-stop",
+            function(){});H(g,"P",p);ia();if(h.addEventListener){var qa;h.addEventListener("DOMContentLoaded",qa=function(){p.trigger("a-domready");h.removeEventListener("DOMContentLoaded",qa,!1)},!1)}var l=h.documentElement,Z=function(){var a=["O","ms","Moz","Webkit"],b=h.createElement("div");return{testGradients:function(){b.style.cssText="background-image:-webkit-gradient(linear,left top,right bottom,from(#9f9),to(white));background-image:-webkit-linear-gradient(left top,#9f9,white);background-image:linear-gradient(left top,#9f9,white);";
+            return-1<b.style.backgroundImage.indexOf("gradient")},test:function(c){var d=c.charAt(0).toUpperCase()+c.substr(1);c=(a.join(d+" ")+d+" "+c).split(" ");for(d=c.length;d--;)if(""===b.style[c[d]])return!0;return!1},testTransform3d:function(){var a=!1;g.matchMedia&&(a=g.matchMedia("(-webkit-transform-3d)").matches);return a}}}(),t=l.className,ra=/(^| )a-mobile( |$)/.test(t),sa=/(^| )a-tablet( |$)/.test(t),k={audio:function(){return!!h.createElement("audio").canPlayType},video:function(){return!!h.createElement("video").canPlayType},
+            canvas:function(){return!!h.createElement("canvas").getContext},svg:function(){return!!h.createElementNS&&!!h.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect},offline:function(){return navigator.hasOwnProperty&&navigator.hasOwnProperty("onLine")&&navigator.onLine},dragDrop:function(){return"draggable"in h.createElement("span")},geolocation:function(){return!!navigator.geolocation},history:function(){return!(!g.history||!g.history.pushState)},webworker:function(){return!!g.Worker},
+            autofocus:function(){return"autofocus"in h.createElement("input")},inputPlaceholder:function(){return"placeholder"in h.createElement("input")},textareaPlaceholder:function(){return"placeholder"in h.createElement("textarea")},localStorage:function(){return"localStorage"in g&&null!==g.localStorage},orientation:function(){return"orientation"in g},touch:function(){return"ontouchend"in h},gradients:function(){return Z.testGradients()},hires:function(){var a=g.devicePixelRatio&&1.5<=g.devicePixelRatio||
+            g.matchMedia&&g.matchMedia("(min-resolution:144dpi)").matches;z("hiRes"+(ra?"Mobile":sa?"Tablet":"Desktop"),a?1:0);return a},transform3d:function(){return Z.testTransform3d()},touchScrolling:function(){return m(/Windowshop|android.([3-9]|[L-Z])|OS ([5-9]|[1-9][0-9]+)(_[0-9]{1,2})+ like Mac OS X|Chrome|Silk|Firefox|Trident.+?; Touch/i)},ios:function(){return m(/OS [1-9][0-9]*(_[0-9]*)+ like Mac OS X/i)&&!m(/trident|Edge/i)},android:function(){return m(/android.([1-9]|[L-Z])/i)&&!m(/trident|Edge/i)},
+            mobile:function(){return ra},tablet:function(){return sa},rtl:function(){return"rtl"===l.dir}},u;for(u in k)k.hasOwnProperty(u)&&(k[u]=ka(k[u]));for(var aa="textShadow textStroke boxShadow borderRadius borderImage opacity transform transition".split(" "),P=0;P<aa.length;P++)k[aa[P]]=ka(function(){return Z.test(aa[P])});var M=!0,la=0,X={w:0,h:0},N=4;L();w(g,"resize",function(){clearTimeout(la);N=4;L()});var ta={getItem:function(a){try{return g.localStorage.getItem(a)}catch(b){}},setItem:function(a,
+            b){try{return g.localStorage.setItem(a,b)}catch(c){}}};ja(l,"a-no-js");E(l,"a-js");!m(/OS [1-8](_[0-9]*)+ like Mac OS X/i)||g.navigator.standalone||m(/safari/i)||E(l,"a-ember");t=[];for(u in k)k.hasOwnProperty(u)&&k[u]&&t.push("a-"+u.replace(/([A-Z])/g,function(a){return"-"+a.toLowerCase()}));E(l,t.join(" "));l.setAttribute("data-aui-build-date","3.19.2-2019-04-03");p.register("p-detect",function(){return{capabilities:k,localStorage:k.localStorage&&ta,toggleResponsiveGrid:ya,responsiveGridEnabled:za}});
+            m(/UCBrowser/i)||k.localStorage&&E(l,ta.getItem("a-font-class"));p.declare("a-event-revised-handling",!1);var x;try{x=navigator.serviceWorker}catch(a){G("sw:nav_err")}x&&(w(x,"message",function(a){a&&a.data&&z(a.data.k,a.data.v)}),x.controller&&x.controller.postMessage("MSG-RDY"));var na=[];(function(a){var b=a.reg,c=a.unreg;x&&x.getRegistrations?(F.when("A","a-util").execute(function(a,b){oa(a,b,c,"unregister")}),w(g,"load",function(){F.when("A","a-util").execute(function(a,c){oa(a,c,b,"register");
+            ma()})})):(b&&(b.browser&&n(r("register","browser")+"unsupported"),b.prodMshop&&n(r("register","prod_mshop")+"unsupported"),b.betaMshop&&n(r("register","beta_mshop")+"unsupported")),c&&(c.browser&&n(r("unregister","browser")+"unsupported"),c.prodMshop&&n(r("unregister","prod_mshop")+"unsupported"),c.betaMshop&&n(r("unregister","beta_mshop")+"unsupported")),ma())})({reg:{},unreg:{}});p.declare("a-fix-event-off",!1);z("pagejs:pkgExecTime",D()-Aa)})(window,document,Date);
+              (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('61HHaoAEflL._RC|11-BZEJ8lnL.js,613Ms+plgbL.js,21Of0-9HPCL.js,012FVc3131L.js,119KAWlHU6L.js,31x4ENTlVIL.js,31ReKJl2X6L.js,51keOj-1JaL.js,11AHlQhPRjL.js,016iHgpF74L.js,11aNYFFS5hL.js,116tgw9TSaL.js,211-p4GRUCL.js,01PoLXBDXWL.js,61BsuCRwHCL.js,01mi-J86cyL.js,11BOgvnnntL.js,310xuTUX4pL.js,01rpauTep4L.js,01iyxuSGj4L.js,015Hx8pTO1L.js_.js?AUIClients/AmazonUI#192338-T1.169160-T1.144375-T1');
+        </script>
+
+        <script type="text/javascript" async="" crossorigin="anonymous" src="{{ url_for('static', filename='js/jquery-3.1.0.min.js')}}"></script>
+        <script type="text/javascript" async="" crossorigin="anonymous" src="{{ url_for('static', filename='js/script1.js')}}"></script>
+        <script type="text/javascript" async="" crossorigin="anonymous" src="{{ url_for('static', filename='js/script2.js')}}"></script>
+        <script type="text/javascript">
+            window.P && window.P.when('workflowType', 'escompstripe', 'ready').execute(function(WorkflowType, ESCompStripe){
+                document.getElementById("image-0").setAttribute("checked", "checked")
+                ESCompStripe.launch(WorkflowType.SComp);
+            });
+        </script>
+        <title dir="ltr">Flipkart Chrome Plugin</title>
+    </head>
+    <body class="stripe-page a-aui_149818-c a-aui_152852-c a-aui_157141-t1 a-aui_158613-c a-aui_160684-t1 a-aui_57326-c a-aui_72554-c a-aui_accessibility_49860-c a-aui_attr_validations_1_51371-c a-aui_bolt_62845-c a-aui_perf_130093-c a-aui_tnr_v2_180836-c a-aui_ux_113788-c a-aui_ux_114039-c a-aui_ux_145937-c a-aui_ux_60000-c a-meter-animate" data-gr-c-s-loaded="true">
+        <div id="a-page">
+            <script type="a-state" data-a-state="{&quot;key&quot;:&quot;a-wlab-states&quot;}">{"AUI_160684":"T1","AUI_157141":"T1","AUI_TNR_V2_180836":"C","AUI_158613":"C","AUI_149818":"C","AUI_PERF_130093":"C"}</script>
+            <div class="container">
+                <div class="a-section a-spacing-none intro-container" role="toolbar">
+                    <a class="a-link-normal logo amazon-logo ui-click-metric" target="_blank" href="https://www.flipkart.com/"> </a>
+                    <div class="a-section a-text-left query-container">
+                        <p class="a-spacing-none greeting-text white-space-nowrap">
+                            Top results on Flipkart
+                        </p>
+                        <p class="searchCountContainer query-results">
+                            <span id="resultsDisplayedCount" class="search-count">1 - 7</span>
+                            <span class="search-count"> of {{result.json["productCount"]}} for </span>
+                            <a id="queryParam" data-metric-target="Keyword" class="a-size-base a-align-center a-link-normal query-param white-space-nowrap ui-click-metric" target="_blank" rel="next " title="shirts" href="{{result.json["searchUrl"]}}"">
+                            {{result.json["query"]}}
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="a-section a-spacing-none results-container" role="toolbar">
+                    <div class="a-section a-spacing-none results-inner-wrapper">
+                        <div class="a-section a-spacing-none a-text-left product-carousel-container">
+                            <div class="a-section a-spacing-none products-accordion">
+                                <ul class="a-unordered-list a-nostyle a-vertical products-list">
+{% for item in result.json["productSummarySlots"] %}
+<li class="product">
+	<span class="a-list-item">
+		<input type="radio" id="image-{{item.index}}" name="product">
+		<label for="image-{{item.index}}" class="image-label" style="display: block;margin: auto;text-align: center;vertical-align: middle;">
+			<img alt="" src="{{item.imageUrl}}" data-metric-target="Product-{{item.index}}" onerror="window.onImageLoadError(this)" data-a-hires="{{item.imageUrl}}" style="display: block;margin: auto;text-align: center;vertical-align: middle;">
+		</label>
+		<div class="a-section a-spacing-none description">
+			<a data-metric-target="Title-{{item.index}}" class="a-link-normal title white-space-nowrap ui-click-metric" target="_blank" rel="next " href="{{item.productUrl}}">
+			{{item.title}}
+			</a>
+			<div class="a-section scomp-information white-space-nowrap">
+				<span class="a-size-small" style="line-height: normal;display: inline-block;color: #fff;padding: 2px 4px 2px 6px;border-radius: 3px;font-weight: 500;font-size: 12px;vertical-align: middle;background-color: #388e3c;">{{item.rating}}<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMiI+PHBhdGggZmlsbD0iI0ZGRiIgZD0iTTYuNSA5LjQzOWwtMy42NzQgMi4yMy45NC00LjI2LTMuMjEtMi44ODMgNC4yNTQtLjQwNEw2LjUuMTEybDEuNjkgNC4wMSA0LjI1NC40MDQtMy4yMSAyLjg4Mi45NCA0LjI2eiIvPjwvc3ZnPg==" style="margin: 2px 0 0 2px;height: 10px;"></span>
+				<span class="reviews" style="padding-left: 8px;font-weight: 500;color: #878787;">Based on {{item.reviewCount}} reviews </abbr>
+				<img height="21" src="//img1a.flixcart.com/www/linchpin/fk-cp-zion/img/fa_8b4b59.png" style="padding-left: 8px">
+				</a>
+			</div>
+			<div class="a-section a-spacing-none">
+				₹<abbr class="price" style="text-decoration: line-through;font-weight: 500;color: #212121;">{{item.mrp}}</abbr> | 
+				<abbr class="price" style="font-weight: 500;color: #212121;">₹{{item.finalPrice}}</abbr> | <span style="color: #388e3c;font-size: 13px;letter-spacing: -.2px;font-weight: 500;"><b>{{item.totalDiscount}}% off</b></span>
+			</div>
+		</div>
+	</span>
+</li>
+{% endfor %}
+                                    
+<!--                                     <li class="product">
+                                        <span class="a-list-item">
+                                            <input type="radio" id="image-0" name="product" checked="checked">
+                                            <label for="image-0" class="image-label">
+                                            <a data-metric-target="Image-0" class="a-link-normal ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/dp/B01HQ4O058?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                            <img alt="" src="{{ url_for('static', filename='images/716s7jflElL._SS110_.jpg')}}" data-metric-target="Product-0" onerror="window.onImageLoadError(this)" height="55" width="55" data-a-hires="">
+                                            </a>
+                                            </label>
+                                            <div class="a-section a-spacing-none description">
+                                                <a data-metric-target="Title-0" class="a-link-normal title white-space-nowrap ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/dp/B01HQ4O058?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                                Katso Men's Cotton T-Shirt (Pack Of 1) (Katso-Hood-Full)
+                                                </a>
+                                                <div class="a-section scomp-information white-space-nowrap">
+                                                    <a data-metric-target="Rating-0" class="a-align-center a-link-normal review-link ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/product-reviews/B01HQ4O058?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                                    <i class="review-star a-icon a-icon-star a-star-4"></i>
+                                                    <span class="a-size-small review-count">
+                                                    1938 customer reviews
+                                                    </span>
+                                                    </a>
+                                                    <span class="a-size-small seprator">|</span>
+                                                    <a data-metric-target="Question-0" class="a-align-center a-link-normal scomp-stripe-answered-questions ui-click-metric" target="_blank" href="https://www.amazon.in/dp/B01HQ4O058?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp&amp;noLL=1#Ask">
+                                                    <span class="a-size-small">417 answered questions</span>
+                                                    </a>
+                                                </div>
+                                                <div class="a-section a-spacing-none">
+                                                    <abbr class="a-color-price price a-text-bold">₹284.00-₹304.00</abbr>
+                                                    <span class="prime-icon">
+                                                    <i class="a-icon a-icon-prime a-icon-small prime-icon" role="img"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </li>
+                                    
+                                    <li class="product">
+                                        <span class="a-list-item">
+                                            <input type="radio" id="image-1" name="product">
+                                            <label for="image-1" class="image-label">
+                                            <a data-metric-target="Image-1" class="a-link-normal ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/dp/B07CZDLXCP?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                            <img alt="" src="{{ url_for('static', filename='images/410FdyEd4ZL._SS110_.jpg')}}" data-metric-target="Product-1" onerror="window.onImageLoadError(this)" height="55" width="55" data-a-hires="">
+                                            </a>
+                                            </label>
+                                            <div class="a-section a-spacing-none description">
+                                                <a data-metric-target="Title-1" class="a-link-normal title white-space-nowrap ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/dp/B07CZDLXCP?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                                Campus Sutra Men's Checkered Casual Shirts
+                                                </a>
+                                                <div class="a-section scomp-information white-space-nowrap">
+                                                    <a data-metric-target="Rating-1" class="a-align-center a-link-normal review-link ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/product-reviews/B07CZDLXCP?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                                    <i class="review-star a-icon a-icon-star a-star-4"></i>
+                                                    <span class="a-size-small review-count">
+                                                    250 customer reviews
+                                                    </span>
+                                                    </a>
+                                                    <span class="a-size-small seprator">|</span>
+                                                    <a data-metric-target="Question-1" class="a-align-center a-link-normal scomp-stripe-answered-questions ui-click-metric" target="_blank" href="https://www.amazon.in/dp/B07CZDLXCP?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp&amp;noLL=1#Ask">
+                                                    <span class="a-size-small">54 answered questions</span>
+                                                    </a>
+                                                </div>
+                                                <div class="a-section a-spacing-none">
+                                                    <abbr class="a-color-price price a-text-bold">₹655.00</abbr>
+                                                    <span class="prime-icon">
+                                                    <i class="a-icon a-icon-prime a-icon-small prime-icon" role="img"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </li>
+                                    
+                                    <li class="product">
+                                        <span class="a-list-item">
+                                            <input type="radio" id="image-2" name="product">
+                                            <label for="image-2" class="image-label">
+                                            <a data-metric-target="Image-2" class="a-link-normal ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/dp/B07HJ8WKM1?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                            <img alt="" src="{{ url_for('static', filename='images/71qwnRAujEL._SS110_.jpg')}}" data-metric-target="Product-2" onerror="window.onImageLoadError(this)" height="55" width="55" data-a-hires="71qwnRAujEL._SS110_.jpg">
+                                            </a>
+                                            </label>
+                                            <div class="a-section a-spacing-none description">
+                                                <a data-metric-target="Title-2" class="a-link-normal title white-space-nowrap ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/dp/B07HJ8WKM1?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                                AELOMART Men's Cotton T Shirt-(Aelotshirt1020ol-P_Olive)
+                                                </a>
+                                                <div class="a-section scomp-information white-space-nowrap">
+                                                    <a data-metric-target="Rating-2" class="a-align-center a-link-normal review-link ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/product-reviews/B07HJ8WKM1?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                                    <i class="review-star a-icon a-icon-star a-star-4"></i>
+                                                    <span class="a-size-small review-count">
+                                                    289 customer reviews
+                                                    </span>
+                                                    </a>
+                                                    <span class="a-size-small seprator">|</span>
+                                                    <a data-metric-target="Question-2" class="a-align-center a-link-normal scomp-stripe-answered-questions ui-click-metric" target="_blank" href="https://www.amazon.in/dp/B07HJ8WKM1?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp&amp;noLL=1#Ask">
+                                                    <span class="a-size-small">37 answered questions</span>
+                                                    </a>
+                                                </div>
+                                                <div class="a-section a-spacing-none">
+                                                    <abbr class="a-color-price price a-text-bold">₹340.00-₹449.00</abbr>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </li>
+                                    
+                                    <li class="product">
+                                        <span class="a-list-item">
+                                            <input type="radio" id="image-3" name="product">
+                                            <label for="image-3" class="image-label">
+                                            <a data-metric-target="Image-3" class="a-link-normal ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/dp/B07H1KLR44?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                            <img alt="" src="{{ url_for('static', filename='images/61-TuCrKZ7L._SS110_.jpg')}}" data-metric-target="Product-3" onerror="window.onImageLoadError(this)" height="55" width="55" data-a-hires="61-TuCrKZ7L._SS110_.jpg">
+                                            </a>
+                                            </label>
+                                            <div class="a-section a-spacing-none description">
+                                                <a data-metric-target="Title-3" class="a-link-normal title white-space-nowrap ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/dp/B07H1KLR44?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                                IndoPrimo Men's Cotton Casual Shirt for Men Full Sleeves
+                                                </a>
+                                                <div class="a-section scomp-information white-space-nowrap">
+                                                    <a data-metric-target="Rating-3" class="a-align-center a-link-normal review-link ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/product-reviews/B07H1KLR44?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                                    <i class="review-star a-icon a-icon-star a-star-3"></i>
+                                                    <span class="a-size-small review-count">
+                                                    152 customer reviews
+                                                    </span>
+                                                    </a>
+                                                    <span class="a-size-small seprator">|</span>
+                                                    <a data-metric-target="Question-3" class="a-align-center a-link-normal scomp-stripe-answered-questions ui-click-metric" target="_blank" href="https://www.amazon.in/dp/B07H1KLR44?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp&amp;noLL=1#Ask">
+                                                    <span class="a-size-small">45 answered questions</span>
+                                                    </a>
+                                                </div>
+                                                <div class="a-section a-spacing-none">
+                                                    <abbr class="a-color-price price a-text-bold">₹699.00</abbr>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </li>
+                                    
+                                    <li class="product">
+                                        <span class="a-list-item">
+                                            <input type="radio" id="image-4" name="product">
+                                            <label for="image-4" class="image-label">
+                                            <a data-metric-target="Image-4" class="a-link-normal ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/dp/B07H1H3YL8?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                            <img alt="" src="{{ url_for('static', filename='images/610ZM3NxhBL._SS110_.jpg')}}" data-metric-target="Product-4" onerror="window.onImageLoadError(this)" height="55" width="55" data-a-hires="">
+                                            </a>
+                                            </label>
+                                            <div class="a-section a-spacing-none description">
+                                                <a data-metric-target="Title-4" class="a-link-normal title white-space-nowrap ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/dp/B07H1H3YL8?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                                IndoPrimo Men's Cotton Casual Shirt for Men Full Sleeves
+                                                </a>
+                                                <div class="a-section scomp-information white-space-nowrap">
+                                                    <a data-metric-target="Rating-4" class="a-align-center a-link-normal review-link ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/product-reviews/B07H1H3YL8?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                                    <i class="review-star a-icon a-icon-star a-star-3-5"></i>
+                                                    <span class="a-size-small review-count">
+                                                    122 customer reviews
+                                                    </span>
+                                                    </a>
+                                                    <span class="a-size-small seprator">|</span>
+                                                    <a data-metric-target="Question-4" class="a-align-center a-link-normal scomp-stripe-answered-questions ui-click-metric" target="_blank" href="https://www.amazon.in/dp/B07H1H3YL8?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp&amp;noLL=1#Ask">
+                                                    <span class="a-size-small">35 answered questions</span>
+                                                    </a>
+                                                </div>
+                                                <div class="a-section a-spacing-none">
+                                                    <abbr class="a-color-price price a-text-bold">₹690.00-₹699.00</abbr>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </li>
+                                    
+                                    <li class="product">
+                                        <span class="a-list-item">
+                                            <input type="radio" id="image-5" name="product">
+                                            <label for="image-5" class="image-label">
+                                            <a data-metric-target="Image-5" class="a-link-normal ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/dp/B072NYYFLR?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                            <img alt="" src="{{ url_for('static', filename='images/81hCw2dOEXL._SS110_.jpg')}}" data-metric-target="Product-5" onerror="window.onImageLoadError(this)" height="55" width="55" data-a-hires="81hCw2dOEXL._SS110_.jpg">
+                                            </a>
+                                            </label>
+                                            <div class="a-section a-spacing-none description">
+                                                <a data-metric-target="Title-5" class="a-link-normal title white-space-nowrap ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/dp/B072NYYFLR?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                                Dennis Lingo Men's Cotton Casual Shirt
+                                                </a>
+                                                <div class="a-section scomp-information white-space-nowrap">
+                                                    <a data-metric-target="Rating-5" class="a-align-center a-link-normal review-link ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/product-reviews/B072NYYFLR?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                                    <i class="review-star a-icon a-icon-star a-star-3-5"></i>
+                                                    <span class="a-size-small review-count">
+                                                    806 customer reviews
+                                                    </span>
+                                                    </a>
+                                                    <span class="a-size-small seprator">|</span>
+                                                    <a data-metric-target="Question-5" class="a-align-center a-link-normal scomp-stripe-answered-questions ui-click-metric" target="_blank" href="https://www.amazon.in/dp/B072NYYFLR?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp&amp;noLL=1#Ask">
+                                                    <span class="a-size-small">179 answered questions</span>
+                                                    </a>
+                                                </div>
+                                                <div class="a-section a-spacing-none">
+                                                    <abbr class="a-color-price price a-text-bold">₹399.00-₹549.00</abbr>
+                                                    <span class="prime-icon">
+                                                    <i class="a-icon a-icon-prime a-icon-small prime-icon" role="img"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </li>
+                                    
+                                    <li class="product">
+                                        <span class="a-list-item">
+                                            <input type="radio" id="image-6" name="product">
+                                            <label for="image-6" class="image-label">
+                                            <a data-metric-target="Image-6" class="a-link-normal ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/dp/B07B8PCNYM?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                            <img alt="" src="{{ url_for('static', filename='images/71pptbGD1sL._SS110_.jpg')}}" data-metric-target="Product-6" onerror="window.onImageLoadError(this)" height="55" width="55" data-a-hires="">
+                                            </a>
+                                            </label>
+                                            <div class="a-section a-spacing-none description">
+                                                <a data-metric-target="Title-6" class="a-link-normal title white-space-nowrap ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/dp/B07B8PCNYM?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                                Seven Rocks Regular Fit Men's Cotton T-Shirt (T16)
+                                                </a>
+                                                <div class="a-section scomp-information white-space-nowrap">
+                                                    <a data-metric-target="Rating-6" class="a-align-center a-link-normal review-link ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/product-reviews/B07B8PCNYM?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                                    <i class="review-star a-icon a-icon-star a-star-4"></i>
+                                                    <span class="a-size-small review-count">
+                                                    685 customer reviews
+                                                    </span>
+                                                    </a>
+                                                    <span class="a-size-small seprator">|</span>
+                                                    <a data-metric-target="Question-6" class="a-align-center a-link-normal scomp-stripe-answered-questions ui-click-metric" target="_blank" href="https://www.amazon.in/dp/B07B8PCNYM?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp&amp;noLL=1#Ask">
+                                                    <span class="a-size-small">229 answered questions</span>
+                                                    </a>
+                                                </div>
+                                                <div class="a-section a-spacing-none">
+                                                    <abbr class="a-color-price price a-text-bold">₹549.00</abbr>
+                                                    <span class="prime-icon">
+                                                    <i class="a-icon a-icon-prime a-icon-small prime-icon" role="img"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </li>
+                                    
+                                    <li class="product" style="display: none;">
+                                        <span class="a-list-item">
+                                            <input type="radio" id="image-7" name="product">
+                                            <label for="image-7" class="image-label">
+                                            <a data-metric-target="Image-7" class="a-link-normal ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/dp/B07B128DX7?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                            <img alt="" src="{{ url_for('static', filename='images/91pJLJTN+pL._SS110_.jpg')}}" data-metric-target="Product-7" onerror="window.onImageLoadError(this)" height="55" width="55" data-a-hires="">
+                                            </a>
+                                            </label>
+                                            <div class="a-section a-spacing-none description">
+                                                <a data-metric-target="Title-7" class="a-link-normal title white-space-nowrap ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/dp/B07B128DX7?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                                Maniac Men's Cotton T-Shirt (Mens-Ss18-Rn-Fs-Checked-Tshirt)
+                                                </a>
+                                                <div class="a-section scomp-information white-space-nowrap">
+                                                    <a data-metric-target="Rating-7" class="a-align-center a-link-normal review-link ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/product-reviews/B07B128DX7?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                                    <i class="review-star a-icon a-icon-star a-star-3"></i>
+                                                    <span class="a-size-small review-count">
+                                                    763 customer reviews
+                                                    </span>
+                                                    </a>
+                                                    <span class="a-size-small seprator">|</span>
+                                                    <a data-metric-target="Question-7" class="a-align-center a-link-normal scomp-stripe-answered-questions ui-click-metric" target="_blank" href="https://www.amazon.in/dp/B07B128DX7?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp&amp;noLL=1#Ask">
+                                                    <span class="a-size-small">91 answered questions</span>
+                                                    </a>
+                                                </div>
+                                                <div class="a-section a-spacing-none">
+                                                    <abbr class="a-color-price price a-text-bold">₹444.00</abbr>
+                                                    <span class="prime-icon">
+                                                    <i class="a-icon a-icon-prime a-icon-small prime-icon" role="img"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="a-section a-spacing-none a-text-left more-results-container">
+                            <a id="moreResultsLink" data-metric-target="MoreResults" class="a-size-base a-align-top a-link-normal more-results-link ui-click-metric" target="_blank" rel="next " title="More results on Flipkart" href="https://www.amazon.in/s/?field-keywords=shirts&amp;tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                            <span class="text">More results on Flipkart</span><span class="right-pointing-triangle"> ▸ </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="a-section a-spacing-none results-inner-wrapper clone" aria-hidden="true" style="height: 0px; visibility: hidden;">
+                        <div class="a-section a-spacing-none a-text-left product-carousel-container">
+                            <div class="a-section a-spacing-none products-accordion">
+                                <ul class="a-unordered-list a-nostyle a-vertical products-list no-animate">
+                                    
+                                    <li class="product active">
+                                        <span class="a-list-item">
+                                            <label for="image-0" class="image-label">
+                                            <a data-metric-target="Image-0" class="a-link-normal ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/dp/B01HQ4O058?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                            <img alt="" src="{{ url_for('static', filename='images/716s7jflElL._SS110_.jpg')}}" data-metric-target="Product-0" onerror="window.onImageLoadError(this)" height="55" width="55" data-a-hires="">
+                                            </a>
+                                            </label>
+                                            <div class="a-section a-spacing-none description">
+                                                <a data-metric-target="Title-0" class="a-link-normal title white-space-nowrap ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/dp/B01HQ4O058?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                                Katso Men's Cotton T-Shirt (Pack Of 1) (Katso-Hood-Full)
+                                                </a>
+                                                <div class="a-section scomp-information white-space-nowrap">
+                                                    <a data-metric-target="Rating-0" class="a-align-center a-link-normal review-link ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/product-reviews/B01HQ4O058?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                                    <i class="review-star a-icon a-icon-star a-star-4"></i>
+                                                    <span class="a-size-small review-count">
+                                                    1938 customer reviews
+                                                    </span>
+                                                    </a>
+                                                    <span class="a-size-small seprator">|</span>
+                                                    <a data-metric-target="Question-0" class="a-align-center a-link-normal scomp-stripe-answered-questions ui-click-metric" target="_blank" href="https://www.amazon.in/dp/B01HQ4O058?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp&amp;noLL=1#Ask">
+                                                    <span class="a-size-small">417 answered questions</span>
+                                                    </a>
+                                                </div>
+                                                <div class="a-section a-spacing-none">
+                                                    <abbr class="a-color-price price a-text-bold">₹284.00-₹304.00</abbr>
+                                                    <span class="prime-icon">
+                                                    <i class="a-icon a-icon-prime a-icon-small prime-icon" role="img"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </li>
+                                    
+                                    <li class="product">
+                                        <span class="a-list-item">
+                                            <label for="image-1" class="image-label">
+                                            <a data-metric-target="Image-1" class="a-link-normal ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/dp/B07CZDLXCP?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                            <img alt="" src="{{ url_for('static', filename='images/410FdyEd4ZL._SS110_.jpg')}}" data-metric-target="Product-1" onerror="window.onImageLoadError(this)" height="55" width="55" data-a-hires="">
+                                            </a>
+                                            </label>
+                                            <div class="a-section a-spacing-none description">
+                                                <a data-metric-target="Title-1" class="a-link-normal title white-space-nowrap ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/dp/B07CZDLXCP?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                                Campus Sutra Men's Checkered Casual Shirts
+                                                </a>
+                                                <div class="a-section scomp-information white-space-nowrap">
+                                                    <a data-metric-target="Rating-1" class="a-align-center a-link-normal review-link ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/product-reviews/B07CZDLXCP?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                                    <i class="review-star a-icon a-icon-star a-star-4"></i>
+                                                    <span class="a-size-small review-count">
+                                                    250 customer reviews
+                                                    </span>
+                                                    </a>
+                                                    <span class="a-size-small seprator">|</span>
+                                                    <a data-metric-target="Question-1" class="a-align-center a-link-normal scomp-stripe-answered-questions ui-click-metric" target="_blank" href="https://www.amazon.in/dp/B07CZDLXCP?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp&amp;noLL=1#Ask">
+                                                    <span class="a-size-small">54 answered questions</span>
+                                                    </a>
+                                                </div>
+                                                <div class="a-section a-spacing-none">
+                                                    <abbr class="a-color-price price a-text-bold">₹655.00</abbr>
+                                                    <span class="prime-icon">
+                                                    <i class="a-icon a-icon-prime a-icon-small prime-icon" role="img"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </li>
+                                    
+                                    <li class="product">
+                                        <span class="a-list-item">
+                                            <label for="image-2" class="image-label">
+                                            <a data-metric-target="Image-2" class="a-link-normal ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/dp/B07HJ8WKM1?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                            <img alt="" src="{{ url_for('static', filename='images/71qwnRAujEL._SS110_.jpg')}}" data-metric-target="Product-2" onerror="window.onImageLoadError(this)" height="55" width="55" data-a-hires="">
+                                            </a>
+                                            </label>
+                                            <div class="a-section a-spacing-none description">
+                                                <a data-metric-target="Title-2" class="a-link-normal title white-space-nowrap ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/dp/B07HJ8WKM1?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                                AELOMART Men's Cotton T Shirt-(Aelotshirt1020ol-P_Olive)
+                                                </a>
+                                                <div class="a-section scomp-information white-space-nowrap">
+                                                    <a data-metric-target="Rating-2" class="a-align-center a-link-normal review-link ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/product-reviews/B07HJ8WKM1?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                                    <i class="review-star a-icon a-icon-star a-star-4"></i>
+                                                    <span class="a-size-small review-count">
+                                                    289 customer reviews
+                                                    </span>
+                                                    </a>
+                                                    <span class="a-size-small seprator">|</span>
+                                                    <a data-metric-target="Question-2" class="a-align-center a-link-normal scomp-stripe-answered-questions ui-click-metric" target="_blank" href="https://www.amazon.in/dp/B07HJ8WKM1?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp&amp;noLL=1#Ask">
+                                                    <span class="a-size-small">37 answered questions</span>
+                                                    </a>
+                                                </div>
+                                                <div class="a-section a-spacing-none">
+                                                    <abbr class="a-color-price price a-text-bold">₹340.00-₹449.00</abbr>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </li>
+                                    
+                                    <li class="product">
+                                        <span class="a-list-item">
+                                            <label for="image-3" class="image-label">
+                                            <a data-metric-target="Image-3" class="a-link-normal ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/dp/B07H1KLR44?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                            <img alt="" src="{{ url_for('static', filename='images/61-TuCrKZ7L._SS110_.jpg')}}" data-metric-target="Product-3" onerror="window.onImageLoadError(this)" height="55" width="55" data-a-hires="">
+                                            </a>
+                                            </label>
+                                            <div class="a-section a-spacing-none description">
+                                                <a data-metric-target="Title-3" class="a-link-normal title white-space-nowrap ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/dp/B07H1KLR44?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                                IndoPrimo Men's Cotton Casual Shirt for Men Full Sleeves
+                                                </a>
+                                                <div class="a-section scomp-information white-space-nowrap">
+                                                    <a data-metric-target="Rating-3" class="a-align-center a-link-normal review-link ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/product-reviews/B07H1KLR44?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                                    <i class="review-star a-icon a-icon-star a-star-3"></i>
+                                                    <span class="a-size-small review-count">
+                                                    152 customer reviews
+                                                    </span>
+                                                    </a>
+                                                    <span class="a-size-small seprator">|</span>
+                                                    <a data-metric-target="Question-3" class="a-align-center a-link-normal scomp-stripe-answered-questions ui-click-metric" target="_blank" href="https://www.amazon.in/dp/B07H1KLR44?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp&amp;noLL=1#Ask">
+                                                    <span class="a-size-small">45 answered questions</span>
+                                                    </a>
+                                                </div>
+                                                <div class="a-section a-spacing-none">
+                                                    <abbr class="a-color-price price a-text-bold">₹699.00</abbr>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </li>
+                                    
+                                    <li class="product">
+                                        <span class="a-list-item">
+                                            <label for="image-4" class="image-label">
+                                            <a data-metric-target="Image-4" class="a-link-normal ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/dp/B07H1H3YL8?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                            <img alt="" src="{{ url_for('static', filename='images/610ZM3NxhBL._SS110_.jpg')}}" data-metric-target="Product-4" onerror="window.onImageLoadError(this)" height="55" width="55" data-a-hires="">
+                                            </a>
+                                            </label>
+                                            <div class="a-section a-spacing-none description">
+                                                <a data-metric-target="Title-4" class="a-link-normal title white-space-nowrap ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/dp/B07H1H3YL8?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                                IndoPrimo Men's Cotton Casual Shirt for Men Full Sleeves
+                                                </a>
+                                                <div class="a-section scomp-information white-space-nowrap">
+                                                    <a data-metric-target="Rating-4" class="a-align-center a-link-normal review-link ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/product-reviews/B07H1H3YL8?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                                    <i class="review-star a-icon a-icon-star a-star-3-5"></i>
+                                                    <span class="a-size-small review-count">
+                                                    122 customer reviews
+                                                    </span>
+                                                    </a>
+                                                    <span class="a-size-small seprator">|</span>
+                                                    <a data-metric-target="Question-4" class="a-align-center a-link-normal scomp-stripe-answered-questions ui-click-metric" target="_blank" href="https://www.amazon.in/dp/B07H1H3YL8?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp&amp;noLL=1#Ask">
+                                                    <span class="a-size-small">35 answered questions</span>
+                                                    </a>
+                                                </div>
+                                                <div class="a-section a-spacing-none">
+                                                    <abbr class="a-color-price price a-text-bold">₹690.00-₹699.00</abbr>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </li>
+                                    
+                                    <li class="product">
+                                        <span class="a-list-item">
+                                            <label for="image-5" class="image-label">
+                                            <a data-metric-target="Image-5" class="a-link-normal ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/dp/B072NYYFLR?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                            <img alt="" src="{{ url_for('static', filename='images/81hCw2dOEXL._SS110_.jpg')}}" data-metric-target="Product-5" onerror="window.onImageLoadError(this)" height="55" width="55" data-a-hires="">
+                                            </a>
+                                            </label>
+                                            <div class="a-section a-spacing-none description">
+                                                <a data-metric-target="Title-5" class="a-link-normal title white-space-nowrap ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/dp/B072NYYFLR?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                                Dennis Lingo Men's Cotton Casual Shirt
+                                                </a>
+                                                <div class="a-section scomp-information white-space-nowrap">
+                                                    <a data-metric-target="Rating-5" class="a-align-center a-link-normal review-link ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/product-reviews/B072NYYFLR?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                                    <i class="review-star a-icon a-icon-star a-star-3-5"></i>
+                                                    <span class="a-size-small review-count">
+                                                    806 customer reviews
+                                                    </span>
+                                                    </a>
+                                                    <span class="a-size-small seprator">|</span>
+                                                    <a data-metric-target="Question-5" class="a-align-center a-link-normal scomp-stripe-answered-questions ui-click-metric" target="_blank" href="https://www.amazon.in/dp/B072NYYFLR?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp&amp;noLL=1#Ask">
+                                                    <span class="a-size-small">179 answered questions</span>
+                                                    </a>
+                                                </div>
+                                                <div class="a-section a-spacing-none">
+                                                    <abbr class="a-color-price price a-text-bold">₹399.00-₹549.00</abbr>
+                                                    <span class="prime-icon">
+                                                    <i class="a-icon a-icon-prime a-icon-small prime-icon" role="img"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </li>
+                                    
+                                    <li class="product">
+                                        <span class="a-list-item">
+                                            <label for="image-6" class="image-label">
+                                            <a data-metric-target="Image-6" class="a-link-normal ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/dp/B07B8PCNYM?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                            <img alt="" src="{{ url_for('static', filename='images/71pptbGD1sL._SS110_.jpg')}}" data-metric-target="Product-6" onerror="window.onImageLoadError(this)" height="55" width="55" data-a-hires="">
+                                            </a>
+                                            </label>
+                                            <div class="a-section a-spacing-none description">
+                                                <a data-metric-target="Title-6" class="a-link-normal title white-space-nowrap ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/dp/B07B8PCNYM?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                                Seven Rocks Regular Fit Men's Cotton T-Shirt (T16)
+                                                </a>
+                                                <div class="a-section scomp-information white-space-nowrap">
+                                                    <a data-metric-target="Rating-6" class="a-align-center a-link-normal review-link ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/product-reviews/B07B8PCNYM?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                                    <i class="review-star a-icon a-icon-star a-star-4"></i>
+                                                    <span class="a-size-small review-count">
+                                                    685 customer reviews
+                                                    </span>
+                                                    </a>
+                                                    <span class="a-size-small seprator">|</span>
+                                                    <a data-metric-target="Question-6" class="a-align-center a-link-normal scomp-stripe-answered-questions ui-click-metric" target="_blank" href="https://www.amazon.in/dp/B07B8PCNYM?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp&amp;noLL=1#Ask">
+                                                    <span class="a-size-small">229 answered questions</span>
+                                                    </a>
+                                                </div>
+                                                <div class="a-section a-spacing-none">
+                                                    <abbr class="a-color-price price a-text-bold">₹549.00</abbr>
+                                                    <span class="prime-icon">
+                                                    <i class="a-icon a-icon-prime a-icon-small prime-icon" role="img"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </li>
+                                    
+                                    <li class="product">
+                                        <span class="a-list-item">
+                                            <label for="image-7" class="image-label">
+                                            <a data-metric-target="Image-7" class="a-link-normal ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/dp/B07B128DX7?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                            <img alt="" src="{{ url_for('static', filename='images/91pJLJTN+pL._SS110_.jpg')}}" data-metric-target="Product-7" onerror="window.onImageLoadError(this)" height="55" width="55" data-a-hires="')}}">
+                                            </a>
+                                            </label>
+                                            <div class="a-section a-spacing-none description">
+                                                <a data-metric-target="Title-7" class="a-link-normal title white-space-nowrap ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/dp/B07B128DX7?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                                Maniac Men's Cotton T-Shirt (Mens-Ss18-Rn-Fs-Checked-Tshirt)
+                                                </a>
+                                                <div class="a-section scomp-information white-space-nowrap">
+                                                    <a data-metric-target="Rating-7" class="a-align-center a-link-normal review-link ui-click-metric" target="_blank" rel="next " href="https://www.amazon.in/product-reviews/B07B128DX7?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                                                    <i class="review-star a-icon a-icon-star a-star-3"></i>
+                                                    <span class="a-size-small review-count">
+                                                    763 customer reviews
+                                                    </span>
+                                                    </a>
+                                                    <span class="a-size-small seprator">|</span>
+                                                    <a data-metric-target="Question-7" class="a-align-center a-link-normal scomp-stripe-answered-questions ui-click-metric" target="_blank" href="https://www.amazon.in/dp/B07B128DX7?tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp&amp;noLL=1#Ask">
+                                                    <span class="a-size-small">91 answered questions</span>
+                                                    </a>
+                                                </div>
+                                                <div class="a-section a-spacing-none">
+                                                    <abbr class="a-color-price price a-text-bold">₹444.00</abbr>
+                                                    <span class="prime-icon">
+                                                    <i class="a-icon a-icon-prime a-icon-small prime-icon" role="img"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </li>
+ -->                                
+								</ul>
+                            </div>
+                        </div>
+                        <div class="a-section a-spacing-none a-text-left more-results-container">
+                            <a id="moreResultsLink" data-metric-target="MoreResults" class="a-size-base a-align-top a-link-normal more-results-link ui-click-metric" target="_blank" rel="next " title="More results on Flipkart" href="https://www.amazon.in/s/?field-keywords=shirts&amp;tag=amz-mkt-chr-in-21&amp;ascsubtag=1ba00-01000-org00-mac00-other-nomod-in000-pcomp-feature-scomp-wm-5&amp;ref=aa_scomp">
+                            <span class="text">More results on Flipkart</span><span class="right-pointing-triangle"> ▸ </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="a-section a-spacing-none a-text-left controls-container" role="toolbar">
+                    <span data-metric-target="MoreInfo" class="stripe-controls stripe-settings ui-click-metric"> &nbsp; ? &nbsp; </span>
+                    <span class="stripe-close stripe-controls"> ✕ </span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
