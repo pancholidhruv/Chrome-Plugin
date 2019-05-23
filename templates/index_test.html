@@ -3,8 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" type="text/css"
+          href="{{ url_for('static', filename='css/style.css')}}">
 </head>
 <body>
-<h1>Test</h1>
+	<div class="container">
+		<div class="flipkart_hl_container">
+			<a id="flipkart_hl" target="_blank" href="https://www.flipkart.com">
+				<img id="flipkart_image" src="https://img1a.flixcart.com/www/linchpin/batman-returns/images/logo_lite-cbb3574d.png">
+			</a>
+			<div id="results_num" class="block_left">
+				<p id="results_heading" class="no-margin no-padding">Top results on Flipkart</p>
+				<p class="no-margin no-padding" class="searchCountContainer query-results">
+					<span id="resultsDisplayedCount" class="search-count">1 - 6</span>
+					<span class="search-count"> of 389522 for </span>
+					<a id="queryParam" target="_blank" rel="next" title="shirts">shirts</a>
+				</p>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

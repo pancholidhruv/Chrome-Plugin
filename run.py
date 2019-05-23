@@ -1,7 +1,6 @@
 from flask import Flask, render_template
 from flask_bootstrap import Bootstrap
 from flask import request, jsonify
-from models.ImageMatch import ImageMatch
 import json
 from collections import OrderedDict
 
@@ -66,5 +65,5 @@ def get_scores():
 if __name__ == "__main__":
     app = create_app("config")
 
-    context = ('cert.pem', 'key.pem')
+    context = ('/Users/dhruv.pancholi/hackday/search_hack_fk/cert.pem', '/Users/dhruv.pancholi/hackday/search_hack_fk/key.pem')
     app.run(debug=True, use_reloader=True, host="0.0.0.0",  ssl_context=context)

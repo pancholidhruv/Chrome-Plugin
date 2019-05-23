@@ -1,0 +1,58 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-size: 13px;
+    line-height: 19px;
+    color: #111;
+    font-family: Arial,sans-serif;
+}
+
+#results_heading {
+	font-size: .875rem;
+	font-weight: 700;
+	color: #111;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.container{
+	border-width: 0px;
+	border-bottom: 1px;
+	border-bottom-color: #2874f0;
+	border-style: solid;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	height: 75px;
+	display: flex;
+}
+
+#flipkart_image {
+	height: 50px;
+}
+.flipkart_hl_container {
+	padding: 12px;
+}
+
+.no-margin {
+	margin: 0px;
+}
+
+.no-padding {
+	padding: 0px;
+}
+
+.block_left {
+	display: block;
+	float: left;
+}
+
+.flex_left {
+	display: block;
+	float: left;
+}
+
+#results_num {
+	float: right;
+	margin: 8px 0 0 14px;
+}
