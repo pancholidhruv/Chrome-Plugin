@@ -12,6 +12,14 @@ function onAnchorClick(event) {
   return false;
 }
 
+// This callback function is called when the content script has been
+// injected and returned its results
+function onPageDetailsReceived(pageDetails) {
+    document.getElementById('title').value = pageDetails.title;
+    document.getElementById('url').value = pageDetails.url;
+    document.getElementById('summary').innerText = pageDetails.summary;
+}
+
 // Given an array of URLs, build a DOM list of those URLs in the
 // browser action popup.
 function buildPopupDom(divName, data) {
@@ -116,4 +124,5 @@ function buildTypedUrlList(divName) {
 
 document.addEventListener('DOMContentLoaded', function () {
   buildTypedUrlList("typedUrl_div");
+
 });
