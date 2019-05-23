@@ -1,0 +1,17 @@
+.float-button {
+    position: fixed;
+    right: -77px;
+    top: 270px;
+    transition: all 0.2s ease-in 0s;//this is the key attribute
+z-index: 9999;
+    cursor: pointer;
+}
+
+#myFirstToolbar123{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: gainsboro;
+    border: 0;
+}
