@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{{result.json["productCount"]}}
+
+<table>
+{% for item in result.json["productSummarySlots"] %}
+<TR>
+    <TD class="c2">{{item.isFAssured}}</TD>
+    <TD class="c2">{{item.rating}}</TD>
+
+
+</TR>
+{% endfor %}
+</table>
+</body>
+</html>
